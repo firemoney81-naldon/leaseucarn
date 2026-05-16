@@ -1,23 +1,871 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <!-- Schema.org 구조화 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Service", "WebPage"],
+      "name": "BMW 8시리즈 유지비, 자동차 리스 & 장기렌트카 완벽 가이드 (2026)",
+      "description": "BMW 8시리즈의 상세 유지비, 자동차 리스, 장기렌트카 비교 분석 및 최적의 견적 정보를 제공합니다. 2026년 최신 정보와 함께 전문적인 차량 관리 및 구매 전략을 알아보세요. Gemini, ChatGPT, AI 기반의 최적화된 정보와 네이버, 구글 검색 엔진 상위 노출 로직을 적용했습니다. M850i, 840i, M8 등 다양한 모델별 맞춤 정보를 담았습니다.",
+      "url": "https://www.example.com/bmw-8series-guide-2026",
+      "provider": {
+        "@type": "Organization",
+        "name": "AI 자동차 정보 분석 센터",
+        "description": "최신 자동차 트렌드와 합리적인 구매/이용 방안을 AI 기술로 분석하여 제공하는 전문 기관입니다. BMW 8시리즈 관련 최적의 솔루션을 제시하며, 최신 2026년 데이터를 기반으로 합니다. Gemini, ChatGPT와 같은 AI 최신 기술을 활용하여 고객 맞춤형 정보를 제공합니다.",
+        "url": "https://www.example.com/ai-auto-center",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+82-2-1234-5678",
+          "contactType": "고객 지원 및 견적 문의",
+          "areaServed": "KR",
+          "description": "BMW 8시리즈 리스, 장기렌트, 유지비 관련 문의 환영"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "BMW 8시리즈 관련 서비스 및 정보",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BMW 8시리즈 상세 유지비 분석 (2026)",
+              "description": "연비, 보험료, 세금, 소모품 교체 비용, 예상 수리비 등 BMW 8시리즈(840i, M850i, M8 등)의 2026년 기준 상세 유지비 총정리. Gemini, ChatGPT AI가 분석한 합리적인 비용 절감 팁 포함."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BMW 8시리즈 자동차 리스 비교 견적",
+              "description": "개인 및 법인 대상 BMW 8시리즈 자동차 리스 상품 비교, 최적의 견적 산출, 장점 및 단점 분석. 저렴한 곳, 전문 업체 정보 제공. 네이버, 구글 검색 최적화 로직 적용."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BMW 8시리즈 장기렌트카 추천 및 혜택",
+              "description": "월 렌트료, 포함 혜택, 계약 조건, 초기 비용 제로 상품 추천. BMW 8시리즈 2026년 신규 혜택, 사은품, 현금 지원, 상품권 등 파격적인 이벤트 정보 제공. AI 기반 추천."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BMW 8시리즈 모델별 상세 비교 (2026)",
+              "description": "840i Coupe, 840i Gran Coupe, M850i xDrive Coupe, M850i xDrive Gran Coupe, M8 Competition Coupe, M8 Competition Convertible 등 BMW 8시리즈 최신 모델별 상세 제원, 가격, 성능, 연비, 특장점 비교."
+            }
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Car",
+        "name": "BMW 8 시리즈",
+        "description": "BMW 8 시리즈는 럭셔리 쿠페, 그란 쿠페, 컨버터블 라인업을 갖춘 BMW의 플래그십 모델로, 역동적인 주행 성능과 최첨단 기술, 고급스러운 디자인이 특징입니다. 2026년형 모델은 더욱 향상된 편의 사양과 효율성을 제공하며, AI 분석을 통해 최적의 유지 및 이용 방안을 제시합니다.",
+        "model": [
+          "BMW 840i Coupe", "BMW 840i Gran Coupe", "BMW M850i xDrive Coupe", "BMW M850i xDrive Gran Coupe",
+          "BMW M8 Competition Coupe", "BMW M8 Competition Convertible", "BMW 840d xDrive Gran Coupe",
+          "BMW 840i Convertible", "BMW M850i xDrive Convertible", "BMW 8 Series Coupe", "BMW 8 Series Gran Coupe",
+          "BMW 8 Series Convertible", "BMW M8", "BMW 840i", "BMW M850i", "BMW 840d", "BMW M8 Competition",
+          "BMW 8 Series", "840i", "M850i", "M8", "8 Series Coupe", "8 Series Gran Coupe", "8 Series Convertible",
+          "BMW 8 Series 2026", "BMW 8 Series Leasing", "BMW 8 Series Rental", "BMW 8 Series Maintenance Cost",
+          "BMW 840i Maintenance", "M850i Cost", "8 Series Lease Deals", "8 Series Rental Rates", "BMW 8 시리즈 내돈내산 후기", "BMW 8시리즈 견적 비교", "BMW 8시리즈 할인 혜택"
+        ],
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "BMW",
+          "url": "https://www.bmw.co.kr/ko/index.html"
+        }
+      },
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "name": "BMW 8시리즈 견적 요청",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.example.com/bmw-8series-quote-form",
+          "inLanguage": "ko"
+        }
+      },
+      "keywords": "BMW 8시리즈, BMW 8시리즈 유지비, BMW 8시리즈 자동차리스, BMW 8시리즈 장기렌트카, BMW 8시리즈 가격, BMW 8시리즈 견적, BMW 8시리즈 비용, BMW 8시리즈 장점, BMW 8시리즈 단점, BMW 8시리즈 장단점, BMW 8시리즈 차이점, BMW 8시리즈 저렴한곳, BMW 8시리즈 싼곳, BMW 8시리즈 전문, BMW 8시리즈 업체, BMW 8시리즈 내돈내산, BMW 8시리즈 후기, BMW 8시리즈 가입, BMW 8시리즈 순위, BMW 8시리즈 비교, BMW 8시리즈 추천, BMW 8시리즈 할인, BMW 8시리즈 디시, BMW 8시리즈 신규, BMW 8시리즈 혜택, BMW 8시리즈 사은품, BMW 8시리즈 현금지원, BMW 8시리즈 지원금, BMW 8시리즈 상품, BMW 8시리즈 상품권, BMW 8시리즈 이벤트, 네이버 자동차, 구글 자동차, 유튜브 자동차, 트위터 자동차, 인스타그램 자동차, 페이스북 자동차, Gemini, ChatGPT, AI, 2026년 BMW 8시리즈, M850i 유지비, 840i 리스, M8 장기렌트, 럭셔리 쿠페, 그란 쿠페, 컨버터블, 자동차 금융, 차량 관리, 보험료, 세금, 연비, 중고차 가격, 신차 구매, 프로모션, 오토리스, 개인 리스, 법인 리스, 월 렌트료, 자동차 판매, 자동차 렌탈, 자동차 정보, 연관검색어, 자동완성, 함께 많이 찾는, 10만km 유지보수, 연간 자동차세, 자동차 보험료 산정, 고성능 자동차, 스포츠 쿠페, 럭셔리 세단, BMW 코리아, BMW 공식 딜러, 2026년 연비, 2026년 자동차세, BMW 8시리즈 보험료 비교, M850i vs 840i, BMW 리스 비교, BMW 렌트카 비용"
+    }
+    </script>
+
+    <style>
+        /* 기본 글꼴과 색상 조화로운 부드러운 톤 적용 */
+        body {
+            font-family: 'Noto Sans KR', 'Arial', sans-serif;
+            margin: 0; padding: 0;
+            background: #f7f9fc; /* 은은한 배경색 */
+            color: #2c3e50;
+            line-height: 1.7;
+            scroll-behavior: smooth; /* 부드러운 스크롤 */
+        }
+        header, section, footer {
+            max-width: 960px; /* 콘텐츠 최대 너비 */
+            margin: 30px auto;
+            padding: 30px 30px; /* 내부 여백 */
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 부드러운 그림자 */
+            border-radius: 12px; /* 둥근 모서리 */
+        }
+        h1, h2, h3 {
+            color: #34495e; /* 제목색 */
+            margin-top: 1.2em;
+            margin-bottom: 0.8em;
+            font-weight: 700;
+            letter-spacing: -0.03em; /* 자간 조정 */
+        }
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 2.2rem;
+            border-bottom: 3px solid #2980b9; /* 섹션 구분선 */
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 1.6rem;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        p, li {
+            font-size: 1.1rem; /* 기본 텍스트 크기 */
+            color: #4d5d6c; /* 본문 텍스트 색상 */
+            margin-bottom: 1.2em;
+            line-height: 1.8; /* 줄 간격 */
+        }
+        li {
+            margin-bottom: 1em;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center; /* 중앙 정렬 */
+            gap: 25px; /* 메뉴 간 간격 */
+            padding: 0;
+            list-style: none;
+            border-bottom: 2px solid #e0e0e0; /* 부드러운 구분선 */
+            margin-bottom: 3em;
+            padding-bottom: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #2980b9;
+            transition: color 0.3s ease, transform 0.3s ease; /* 애니메이션 효과 */
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #1c5980;
+            transform: translateY(-2px); /* 호버 시 살짝 위로 이동 */
+        }
+
+        /* 표 스타일 */
+        table {
+            width: 100%;
+            border-collapse: separate; /* 테두리 간격 */
+            margin: 30px 0;
+            font-size: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* 표 그림자 */
+            border-radius: 8px; /* 표 모서리 둥글게 */
+            overflow: hidden; /* 내부 요소가 넘치지 않도록 */
+        }
+        th, td {
+            border: none; /* 기본 테두리 제거 */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        th {
+            background-color: #34495e; /* 헤더 배경색 */
+            color: white;
+            font-weight: 700;
+            font-size: 1.15rem;
+            letter-spacing: -0.02em;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa; /* 짝수 행 배경색 */
+        }
+        tr:hover {
+            background-color: #eaf2f8; /* 호버 시 배경색 */
+        }
+        td {
+            color: #4d5d6c;
+        }
+
+        /* 입력 섹션 스타일 */
+        .input-section {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px; /* 입력 필드 간 간격 */
+            justify-content: space-between; /* 필드 간격 조정 */
+        }
+        .input-group {
+            flex: 1 1 300px; /* 유연한 성장 및 축소 */
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #34495e;
+            font-size: 1.05rem;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            width: 100%; /* 너비 100% */
+            box-sizing: border-box; /* 패딩 포함 너비 계산 */
+        }
+        input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+            border-color: #2980b9;
+            box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.2); /* 포커스 시 부드러운 테두리 */
+            outline: none;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px; /* 텍스트 영역 높이 */
+        }
+        button.cta-btn {
+            background-color: #2980b9; /* CTA 버튼 색상 */
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.15rem;
+            border: none;
+            border-radius: 8px; /* 버튼 모서리 */
+            cursor: pointer;
+            margin-top: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            align-self: flex-start; /* 좌측 정렬 */
+        }
+        button.cta-btn:hover {
+            background-color: #1c5980;
+            transform: translateY(-3px); /* 호버 시 살짝 위로 이동 */
+        }
+
+        /* 그래프 스타일 */
+        .chart-container {
+            margin: 50px 0;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        /* FAQ 스타일 */
+        .faq .item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+        .faq .item:last-child {
+            border-bottom: none;
+        }
+        .faq h3 {
+            cursor: pointer;
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+        .faq h3:hover {
+            color: #2980b9;
+        }
+        .faq p {
+            margin: 0 0 15px 0;
+            color: #555;
+            display: none; /* 기본적으로 숨김 */
+            padding-left: 10px;
+            border-left: 3px solid #2980b9;
+            margin-top: 10px;
+        }
+        .faq .item.active h3 {
+            color: #2980b9;
+        }
+        .faq .item.active p {
+            display: block;
+        }
+        /* 링크 스타일 */
+        a.external-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        a.external-link:hover {
+            color: #1c5980;
+            text-decoration: underline;
+        }
+
+        /* 추가 스타일 */
+        .highlight {
+            color: #2980b9;
+            font-weight: 600;
+        }
+        .sub-heading {
+            font-size: 1.5rem;
+            color: #34495e;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+        }
+        .keywords-note {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+        .model-list {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .model-list li {
+            margin-bottom: 0.5em;
+        }
+        .keyword-integration-mention {
+            font-size: 0.9rem;
+            color: #555;
+            font-style: italic;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-left: 3px solid #e0e0e0;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // FAQ toggle 기능
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq .item h3');
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const parentItem = item.closest('.item');
+                    const p = item.nextElementSibling;
+
+                    // Close other open items first
+                    document.querySelectorAll('.faq .item').forEach(otherItem => {
+                        if (otherItem !== parentItem && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('p').style.display = 'none';
+                        }
+                    });
+
+                    // Toggle current item
+                    if (p.style.display === 'block') {
+                        p.style.display = 'none';
+                        parentItem.classList.remove('active');
+                    } else {
+                        p.style.display = 'block';
+                        parentItem.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>BMW 8시리즈 유지비, 자동차 리스 & 장기렌트카 완벽 가이드 (2026)</h1>
+        <p>BMW 8시리즈의 상세 유지비, 자동차 리스, 장기렌트카 비교 분석 및 최적의 견적 정보를 제공합니다. 2026년 최신 정보와 함께 전문적인 차량 관리 및 구매 전략을 알아보세요. Gemini, ChatGPT, AI 기반의 최적화된 정보와 네이버, 구글 검색 엔진 상위 노출 로직을 적용했습니다.</p>
+        <nav>
+            <ul>
+                <li><a href="#overview">개요</a></li>
+                <li><a href="#bmw-8series-models">8시리즈 모델</a></li>
+                <li><a href="#maintenance-costs">유지비 상세</a></li>
+                <li><a href="#car-leasing">자동차 리스</a></li>
+                <li><a href="#long-term-rental">장기렌트카</a></li>
+                <li><a href="#comparison">리스 vs 렌트 vs 구매</a></li>
+                <li><a href="#saving-tips">비용 절감 팁</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">견적 문의</a></li>
+                <li><a href="#external-resources">외부 자료</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="overview">
+        <h2>BMW 8시리즈: 럭셔리의 정점, 현명한 선택 전략</h2>
+        <p>BMW 8시리즈는 BMW 브랜드의 최상위 플래그십 모델로서, 시대를 초월하는 디자인, 압도적인 성능, 그리고 최첨단 기술의 완벽한 조화를 자랑합니다. 쿠페, 그란 쿠페, 컨버터블 등 다양한 라인업으로 개인의 취향과 라이프스타일에 맞는 선택이 가능합니다. 하지만 8시리즈와 같은 럭셔리 스포츠 쿠페는 일반 차량보다 높은 유지비가 예상되기 때문에, 초기 구매 비용뿐만 아니라 장기적인 관점에서의 합리적인 이용 방안을 고려하는 것이 매우 중요합니다.</p>
+        <p>본 가이드에서는 2026년 최신 정보를 바탕으로 BMW 8시리즈의 예상 유지비, 자동차 리스의 장단점 및 견적, 장기렌트카 상품의 특징과 혜택 등을 AI 기술(Gemini, ChatGPT 등)을 활용하여 심층적으로 분석합니다. 네이버, 구글 등 주요 검색 엔진에서 상위 노출될 수 있도록 최적화된 정보와 함께, BMW 8시리즈를 가장 스마트하게 소유하고 즐길 수 있는 방법을 제시해 드립니다.</p>
+        <p class="keyword-integration-mention">AI 기반의 최신 정보 제공 및 검색 엔진 최적화 로직 적용. 2026년 연비, 자동차세, 보험료 정보 포함.</p>
+    </section>
+
+    <section id="bmw-8series-models">
+        <h2>BMW 8시리즈, 당신의 선택은? (2026년형 기준)</h2>
+        <p>BMW 8시리즈는 그 자체로 예술작품과 같습니다. 각 모델은 독특한 매력과 성능을 지니고 있으며, 고객님의 운전 스타일과 라이프스타일에 완벽하게 부합하는 모델을 선택하는 것이 중요합니다. 2026년 현재, 주요 모델 라인업과 그 특징을 살펴보겠습니다.</p>
+
+        <ul class="model-list">
+            <li><strong>BMW 840i Coupe:</strong> 역동성과 우아함의 완벽한 조화. 2도어 쿠페 디자인으로 스포티함과 세련됨을 동시에 갖춘 모델입니다.</li>
+            <li><strong>BMW 840i Gran Coupe:</strong> 4도어 쿠페로, 4인 가족이 편안하게 탑승할 수 있는 실용성을 더한 모델입니다. 넉넉한 공간과 편안함을 제공합니다.</li>
+            <li><strong>BMW M850i xDrive Coupe/Gran Coupe:</strong> V8 엔진의 강력한 성능과 M 퍼포먼스 디자인이 결합된 모델로, 짜릿한 드라이빙 경험을 선사합니다. xDrive 시스템으로 뛰어난 주행 안정성도 확보했습니다.</li>
+            <li><strong>BMW M8 Competition Coupe/Convertible:</strong> BMW M의 정수를 담은 최상위 고성능 모델입니다. 트랙에서의 한계를 넘나드는 퍼포먼스를 일상에서 경험할 수 있습니다.</li>
+            <li><strong>BMW 840d xDrive Gran Coupe:</strong> 효율성을 중시하는 고객을 위한 디젤 모델로, 강력한 토크와 뛰어난 연비를 동시에 제공합니다.</li>
+            <li><strong>BMW 840i Convertible / M850i xDrive Convertible:</strong> 오픈 에어링의 즐거움을 만끽할 수 있는 컨버터블 모델입니다.</li>
+        </ul>
+        <p>이 외에도 다양한 트림과 옵션이 제공될 수 있으며, 각 모델별 정확한 제원 및 가격 정보는 BMW 공식 홈페이지 또는 전문 딜러를 통해 확인하실 수 있습니다. <a href="https://www.bmw.co.kr/ko/index.html" target="_blank" rel="noopener" class="external-link">BMW 코리아 공식 홈페이지</a>에서 최신 정보를 확인해보세요.</p>
+        <p class="keyword-integration-mention">관련 모델명: 840i, M850i, M8, 8 Series Coupe, 8 Series Gran Coupe, 8 Series Convertible, 840d, BMW 8시리즈 2026.</p>
+    </section>
+
+    <section id="maintenance-costs">
+        <h2>BMW 8시리즈, 2026년 예상 유지비 상세 분석</h2>
+        <p>BMW 8시리즈와 같은 럭셔리 스포츠 쿠페는 일반 차량 대비 높은 유지비가 예상됩니다. 2026년 최신 데이터를 기반으로 주요 유지비 항목을 상세히 분석하여 합리적인 차량 관리 계획을 세우도록 돕겠습니다. Gemini, ChatGPT와 같은 AI 분석을 통해 현실적인 비용을 제시합니다.</p>
+
+        <div class="sub-heading">1. 연비 및 유류비</div>
+        <p>BMW 8시리즈는 고성능 엔진을 탑재하고 있어 연비가 일반 세단보다 낮습니다. 모델별, 운전 습관에 따라 차이가 크지만, 시내 주행 시에는 7~9 km/L, 고속 주행 시에는 10~13 km/L 수준을 예상할 수 있습니다. (예: 840i 가솔린 모델 기준)</p>
+        <ul>
+            <li><strong>예상 월간 유류비:</strong> 하루 평균 50km 주행, 월 25일 운행 시, 월 1,250km 주행. 리터당 1,700원 (2026년 평균 유가 기준) 가정 시, 약 150,000원 ~ 220,000원.</li>
+        </ul>
+        <p>고성능 M 모델(M8, M850i)은 연비가 더욱 낮아져 월 유류비 부담이 커집니다.</p>
+
+        <div class="sub-heading">2. 자동차 보험료 (2026년 기준)</div>
+        <p>BMW 8시리즈는 차량 가격이 높아 보험료 또한 상당히 높게 책정됩니다. 운전자의 연령, 운전 경력, 사고 이력, 가입 담보 범위, 보험사 등에 따라 달라지지만, 일반적으로 연간 200만 원에서 500만 원 이상까지 예상해 볼 수 있습니다. 특히 M 모델은 보험료가 더 높습니다.</p>
+        <ul>
+            <li><strong>주요 보험료 산정 기준:</strong> 차량가액, 운전자 연령(만 30세 이상 등), 운전 경력, 사고 이력, 자기부담금 설정, 특약 가입 여부 (자차, 대물 등).</li>
+            <li><strong>AI 보험료 비교 추천:</strong> 다양한 보험사의 상품을 비교하여 최적의 보험료를 산출하는 것이 중요합니다.</li>
+        </ul>
+
+        <div class="sub-heading">3. 자동차세 (2026년 기준)</div>
+        <p>자동차세는 배기량에 따라 계산되며, BMW 8시리즈는 배기량이 높은 편이므로 연간 자동차세 또한 상당합니다.</p>
+        <ul>
+            <li><strong>BMW 840i (3.0L):</strong> 연 75만 원 ~ 85만 원 수준</li>
+            <li><strong>BMW M850i (4.4L):</strong> 연 100만 원 ~ 120만 원 수준</li>
+            <li><strong>BMW M8 Competition (4.4L):</strong> 연 100만 원 ~ 120만 원 수준</li>
+        </ul>
+        <p>취득세, 등록세 등 초기 구매 시 발생하는 세금은 별도입니다.</p>
+
+        <div class="sub-heading">4. 소모품 교체 및 정기 점검 비용</div>
+        <p>BMW 8시리즈의 고성능을 유지하기 위해서는 정기적인 점검과 소모품 교체가 필수적입니다. 서비스 주기, 부품 가격, 공임비 등을 고려할 때 비용이 높습니다.</p>
+        <table class="maintenance-table">
+            <thead>
+                <tr>
+                    <th>항목</th>
+                    <th>주기 (예시)</th>
+                    <th>예상 비용 (원)</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>엔진 오일 & 필터 교환</td>
+                    <td>10,000 ~ 15,000 km</td>
+                    <td>30만 ~ 50만</td>
+                    <td>합성유 기준</td>
+                </tr>
+                <tr>
+                    <td>브레이크 패드/디스크 교환</td>
+                    <td>30,000 ~ 60,000 km</td>
+                    <td>50만 ~ 150만 (축당/세트)</td>
+                    <td>고성능 브레이크 시스템</td>
+                </tr>
+                <tr>
+                    <td>타이어 교환</td>
+                    <td>40,000 ~ 80,000 km</td>
+                    <td>150만 ~ 300만 (4개)</td>
+                    <td>고성능 런플랫 타이어, 휠 사이즈에 따라 상이</td>
+                </tr>
+                <tr>
+                    <td>점화 플러그 교환</td>
+                    <td>60,000 ~ 100,000 km</td>
+                    <td>40만 ~ 80만</td>
+                    <td>엔진 종류에 따라 다름</td>
+                </tr>
+                <tr>
+                    <td>냉각수, 에어컨 필터 등</td>
+                    <td>주기적</td>
+                    <td>10만 ~ 30만</td>
+                    <td>기타 소모품</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="keyword-integration-mention">10만km 유지보수, 엔진 오일, 타이어, 브레이크 패드 등 주요 소모품 비용 고려.</p>
+
+        <div class="sub-heading">5. 예상 수리비 및 기타 비용</div>
+        <p>럭셔리 차량은 부품 가격과 수리 공임이 높아 예상치 못한 수리 발생 시 큰 비용 부담이 될 수 있습니다. 엔진, 변속기, 전자 장치 등의 주요 부품은 수백만 원에서 수천만 원까지 비용이 발생할 수 있습니다. 또한, 주차, 세차, 용품 구매 등 부가적인 비용도 고려해야 합니다.</p>
+
+        <p><strong>총 예상 연간 유지비:</strong> 위 항목들을 종합적으로 고려했을 때, BMW 8시리즈의 연간 유지비는 최소 500만 원에서 1,000만 원 이상까지 발생할 수 있습니다. (차량 모델, 주행 거리, 사고 유무 등에 따라 크게 변동)</p>
+        <p class="keyword-integration-mention">BMW 8시리즈 유지비, M850i 유지비, 840i 연비, 2026년 자동차세, BMW 8시리즈 보험료.</p>
+    </section>
+
+    <section id="car-leasing">
+        <h2>BMW 8시리즈 자동차 리스: 합리적인 럭셔리 경험</h2>
+        <p>BMW 8시리즈를 직접 구매하는 대신 자동차 리스를 활용하면 초기 자금 부담을 줄이고 월 고정 비용으로 럭셔리 스포츠 쿠페를 이용할 수 있습니다. AI 분석을 통해 장단점과 견적 산출 방식을 상세히 안내합니다.</p>
+
+        <div class="sub-heading">자동차 리스란?</div>
+        <p>리스는 금융사가 차량을 구매하여 고객에게 일정 기간 빌려주고, 고객은 매월 사용료(리스료)를 납부하는 방식입니다. 리스 종료 시에는 반납, 재리스, 구매(인수) 중 선택할 수 있습니다. 이는 '차량을 소유'하는 것이 아니라 '사용'하는 개념에 가깝습니다. <a href="https://www.kbinsurance.com" target="_blank" rel="noopener" class="external-link">KB손해보험</a> 등에서 제공하는 차량 관련 금융 상품 정보를 참고하면 이해를 도울 수 있습니다.</p>
+
+        <div class="sub-heading">BMW 8시리즈 리스의 장점</div>
+        <ul>
+            <li><strong>낮은 초기 비용:</strong> 일시불 구매 대비 선수금 부담이 적거나 없는 경우도 많습니다.</li>
+            <li><strong>월 고정 비용:</strong> 월 리스료 외에 보험료, 자동차세 등이 포함된 '통합 리스' 상품을 선택하면 비용 예측이 용이합니다. (월 렌트료와 유사하게 관리 가능)</li>
+            <li><strong>세금 혜택 (법인):</strong> 법인 리스 시, 리스료 전액을 회계상 비용으로 처리하여 법인세 절감 효과를 얻을 수 있습니다.</li>
+            <li><strong>신차 주기적 교체:</strong> 계약 기간(보통 24~60개월) 만료 후 신차로 쉽게 변경 가능하여 항상 최신 모델을 이용할 수 있습니다.</li>
+            <li><strong>차량 관리 용이:</strong> 자동차세, 보험료, 정비 등이 포함된 '풀 서비스 리스' 상품 선택 시 차량 관리에 대한 부담을 크게 줄일 수 있습니다.</li>
+        </ul>
+
+        <div class="sub-heading">BMW 8시리즈 리스의 단점</div>
+        <ul>
+            <li><strong>총 소유 비용:</strong> 리스 기간 동안 납부하는 총 금액이 차량 구매 가격보다 높아질 수 있습니다.</li>
+            <li><strong>약정 거리 초과 시 위약금:</strong> 계약 시 설정한 연간 주행 거리(예: 20,000km)를 초과하면 km당 위약금이 부과됩니다.</li>
+            <li><strong>계약 중도 해지 시 높은 위약금:</strong> 계약 기간 만료 전 해지 시 잔존 가치 및 위약금으로 인해 예상보다 큰 비용이 발생할 수 있습니다.</li>
+            <li><strong>차량 개조 및 튜닝 제한:</strong> 계약 차량이므로 임의적인 개조나 튜닝이 제한될 수 있습니다.</li>
+        </ul>
+
+        <div class="sub-heading">BMW 8시리즈 리스 견적 산출 요소</div>
+        <p>합리적인 리스 견적을 받기 위해서는 다음 요소들을 고려해야 합니다.</p>
+        <ul>
+            <li><strong>차량 가격 (차량가액):</strong> 선택하는 8시리즈 모델 및 옵션에 따라 달라집니다.</li>
+            <li><strong>보증금 (선수금):</strong> 초기 보증금 비율이 높을수록 월 리스료가 낮아집니다. (예: 0% ~ 50%)</li>
+            <li><strong>리스 기간:</strong> 보통 24개월, 36개월, 48개월, 60개월 등 선택 가능합니다. 기간이 길수록 월 리스료는 낮아집니다.</li>
+            <li><strong>약정 주행 거리:</strong> 연간 예상 주행 거리 설정 (예: 10,000km, 15,000km, 20,000km, 무제한 옵션 등)</li>
+            <li><strong>잔존 가치:</strong> 리스 기간 종료 후 차량의 예상 중고 시세. 잔존 가치가 높을수록 월 리스료가 낮아집니다.</li>
+            <li><strong>금리 (머니팩터):</strong> 리스 상품의 이자율에 해당합니다.</li>
+            <li><strong>보험 및 정비 포함 여부:</strong> '풀 서비스 리스'의 경우 월 리스료에 보험료, 자동차세, 소모품 교체 비용 등이 포함될 수 있습니다.</li>
+        </ul>
+        <p class="keyword-integration-mention">BMW 8시리즈 리스, BMW 8시리즈 자동차리스, 840i 리스, M850i 리스, M8 리스, BMW 리스 비교, 2026년 BMW 리스, 개인 리스, 법인 리스, 저렴한 리스, BMW 8시리즈 전문 업체.</p>
+    </section>
+
+    <section id="long-term-rental">
+        <h2>BMW 8시리즈 장기렌트카: 편리함과 유연함</h2>
+        <p>장기렌트카는 리스와 유사하게 일정 기간 차량을 이용하고 월 렌트료를 납부하는 방식이지만, 번호판이나 세금 등에서 차이가 있습니다. BMW 8시리즈를 더욱 유연하게 이용하고 싶다면 장기렌트카가 좋은 대안이 될 수 있습니다.</p>
+
+        <div class="sub-heading">장기렌트카란?</div>
+        <p>장기렌트카는 렌터카 회사가 차량을 구매하여 고객에게 최단 1년에서 최장 5년까지 대여해 주는 서비스입니다. 렌트료에는 차량 가격, 보험료, 자동차세, 소모품 교체 비용 등이 포함되는 경우가 많습니다. '하' 또는 '허' 렌터카 번호판을 사용하게 됩니다.</p>
+
+        <div class="sub-heading">BMW 8시리즈 장기렌트카의 장점</div>
+        <ul>
+            <li><strong>높은 초기 자금 부담 없음:</strong> 선수금 없이 월 렌트료만으로 이용 가능하여 초기 비용 부담이 적습니다. (물론 선수금 옵션 선택 시 월 렌트료는 낮아집니다.)</li>
+            <li><strong>간편한 차량 관리:</strong> 보험, 자동차세, 소모품 교체(엔진 오일, 타이어 등)가 렌트료에 포함되어 있어 차량 관리에 신경 쓸 필요가 적습니다. AI 분석을 통해 최적의 렌트 상품을 추천받을 수 있습니다.</li>
+            <li><strong>사고 처리 용이:</strong> 사고 발생 시 렌터카 회사와 보험사를 통해 간편하게 처리할 수 있습니다.</li>
+            <li><strong>사업자 세금 혜택:</strong> 법인 및 개인사업자는 월 렌트료를 사업소득 경비로 처리하여 세금 감면 혜택을 받을 수 있습니다. (연간 한도 내)</li>
+            <li><strong>만기 시 유연한 선택:</strong> 계약 만기 후 차량 반납, 구매, 또는 신차 재렌트 등 다양한 옵션 선택이 가능합니다.</li>
+            <li><strong>신차 혜택:</strong> 2026년 신규 모델 출시 및 프로모션에 따른 혜택, 사은품, 현금 지원, 상품권 등 파격적인 이벤트에 참여할 수 있는 기회가 많습니다.</li>
+        </ul>
+
+        <div class="sub-heading">BMW 8시리즈 장기렌트카의 단점</div>
+        <ul>
+            <li><strong>'렌터카' 번호판:</strong> '하', '허', '호' 번호판을 사용해야 하므로 개인의 자가용으로 인식되지 않을 수 있습니다.</li>
+            <li><strong>약정 주행 거리 제한:</strong> 리스와 마찬가지로 약정 거리를 초과하면 위약금이 발생합니다.</li>
+            <li><strong>보험료 포함 여부 확인:</strong> 렌트료에 보험료가 포함되어 있는지, 운전자의 연령 및 운전 경력 조건이 명시되어 있는지 꼼꼼히 확인해야 합니다.</li>
+            <li><strong>신차 구매 대비 총 비용:</strong> 장기적으로 볼 때 차량을 직접 구매하는 것보다 총 지출액이 높을 수 있습니다.</li>
+        </ul>
+        <p>BMW 8시리즈의 월 렌트료는 모델, 계약 조건, 프로모션 등에 따라 크게 달라집니다. 2026년 신규 혜택과 파격적인 할인 조건을 확인하여 가장 저렴한 곳, 최고의 업체를 찾아보세요. GPT-4o Mini를 활용한 맞춤 추천도 가능합니다.</p>
+        <p class="keyword-integration-mention">BMW 8시리즈 장기렌트카, BMW 8시리즈 렌트, 840i 렌트, M850i 렌트, M8 렌트, 장기렌트카 추천, 2026년 장기렌트카, 월 렌트료, 초기 비용 없는 렌트카, BMW 렌트카 할인, BMW 렌트카 혜택, BMW 렌트카 상품권, AI 기반 추천.</p>
+    </section>
+
+    <section id="comparison">
+        <h2>BMW 8시리즈: 리스 vs 장기렌트카 vs 직접 구매 비교</h2>
+        <p>BMW 8시리즈를 이용하는 가장 합리적인 방법을 찾기 위해, 각 방식의 장단점을 비교 분석했습니다. 2026년 기준 최신 정보를 반영했습니다.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>BMW 8시리즈 자동차 리스</th>
+                    <th>BMW 8시리즈 장기렌트카</th>
+                    <th>BMW 8시리즈 직접 구매</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>초기 비용</th>
+                    <td>낮음 (보증금 선택)</td>
+                    <td>매우 낮음 (선수금 0원 가능)</td>
+                    <td>높음 (취득세, 등록세, 보험료 등 일시불)</td>
+                </tr>
+                <tr>
+                    <th>월 고정 비용</th>
+                    <td>리스료 (자동차세, 보험료 포함 옵션 가능)</td>
+                    <td>월 렌트료 (보험료, 자동차세, 소모품 포함)</td>
+                    <td>할부 이자, 보험료, 자동차세, 소모품 비용 별도</td>
+                </tr>
+                <tr>
+                    <th>번호판</th>
+                    <td>일반 (자가용)</td>
+                    <td>렌터카 ('하', '허', '호')</td>
+                    <td>일반 (자가용)</td>
+                </tr>
+                <tr>
+                    <th>세금 혜택</th>
+                    <td>법인 사업자 경비 처리 가능</td>
+                    <td>개인/법인 사업자 경비 처리 가능 (연간 한도 내)</td>
+                    <td>없음</td>
+                </tr>
+                <tr>
+                    <th>차량 관리</th>
+                    <td>포함 옵션 선택 시 간편</td>
+                    <td>대부분 포함되어 편리</td>
+                    <td>본인 직접 관리 또는 정비 서비스 이용</td>
+                </tr>
+                <tr>
+                    <th>보험료/세금</th>
+                    <td>리스료에 포함 또는 별도 관리</td>
+                    <td>월 렌트료에 포함</td>
+                    <td>별도 납부 및 관리</td>
+                </tr>
+                <tr>
+                    <th>약정 거리</th>
+                    <td>초과 시 위약금 발생</td>
+                    <td>초과 시 위약금 발생</td>
+                    <td>제한 없음</td>
+                </tr>
+                <tr>
+                    <th>중도 해지</th>
+                    <td>높은 위약금 발생</td>
+                    <td>높은 위약금 발생</td>
+                    <td>중고차 판매 (감가상각 손실)</td>
+                </tr>
+                <tr>
+                    <th>계약 만료 시</th>
+                    <td>반납, 재리스, 구매 선택</td>
+                    <td>반납, 구매, 재렌트 선택</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>장점 요약</th>
+                    <td>세금 혜택, 자가용 번호판, 낮은 초기 부담</td>
+                    <td>높은 신축성, 간편한 관리, 0원 초기 비용, 사업자 혜택</td>
+                    <td>완전한 소유권, 자유로운 운행, 중고차 판매 가능</td>
+                </tr>
+                <tr>
+                    <th>단점 요약</th>
+                    <td>총 비용, 약정 거리 초과 시 페널티</td>
+                    <td>렌터카 번호판, 약정 거리 초과 시 페널티</td>
+                    <td>높은 초기 비용, 감가상각, 관리 부담</td>
+                </tr>
+                <tr>
+                    <th>추천 대상</th>
+                    <td>개인/법인 사업자, 신차 주기적 교체 희망 고객</td>
+                    <td>초기 비용 부담 최소화, 간편한 관리, 차량 운행이 잦은 사업자/개인</td>
+                    <td>장기 보유 계획, 완전한 소유권 희망 고객</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>AI 분석 결과, BMW 8시리즈를 이용할 때 **개인 사업자 또는 법인**이라면 리스 또는 장기렌트카를 통해 세금 혜택과 초기 자금 부담 완화를 얻는 것이 매우 유리합니다. 특히, 차량 운행이 많고 간편한 관리를 원한다면 장기렌트카가, 자가용 번호판을 선호하고 절세 효과를 극대화하고 싶다면 리스가 좋은 선택이 될 수 있습니다.</p>
+        <p class="keyword-integration-mention">BMW 8시리즈 비교, 리스 vs 렌트 vs 구매, BMW 8시리즈 차이점, 840i vs M850i.</p>
+    </section>
+
+    <section id="saving-tips">
+        <h2>BMW 8시리즈, 유지비 및 이용료 절감 팁 (2026년)</h2>
+        <p>BMW 8시리즈를 더욱 경제적으로 이용하기 위한 실질적인 절감 팁을 AI 분석을 통해 제공합니다.</p>
+        <ul>
+            <li><strong>현명한 계약 조건 설정:</strong>
+                <ul>
+                    <li><strong>리스/렌트:</strong> 약정 주행 거리를 현실적으로 설정하고, 불필요한 옵션은 제외하여 월 납입금을 낮추세요. 장기렌트카의 경우, 초기 보증금을 적절히 설정하면 월 렌트료를 절감할 수 있습니다. (예: 30% 보증금)</li>
+                    <li><strong>다양한 프로모션 활용:</strong> 2026년 신규 이벤트, 캐시백, 상품권, 사은품 증정 등 파격적인 혜택을 제공하는 업체를 찾아보세요.</li>
+                </ul>
+            </li>
+            <li><strong>주기적인 차량 관리:</strong>
+                <ul>
+                    <li><strong>예방 정비:</strong> 규정된 주기마다 엔진 오일, 필터, 타이어 공기압 등을 점검하고 교체하면 예상치 못한 고장과 큰 수리비를 예방할 수 있습니다.</li>
+                    <li><strong>운전 습관 개선:</strong> 급가속, 급제동을 피하고 부드러운 운전 습관은 연비 개선과 차량 부품 수명 연장에 도움이 됩니다.</li>
+                </ul>
+            </li>
+            <li><strong>보험료 절감:</strong>
+                <ul>
+                    <li><strong>보험료 비교 견적:</strong> 다양한 보험사의 상품을 꼼꼼히 비교하여 가장 저렴하면서도 필요한 보장을 제공하는 보험사를 선택하세요. (AI 비교 서비스 활용)</li>
+                    <li><strong>할인 조건 활용:</strong> 무사고 경력, 운전자 연령, 차령 할인 등 보험사별 할인 제도를 적극 활용하세요.</li>
+                </ul>
+            </li>
+            <li><strong>정부 지원 정책 활용:</strong> 친환경차 보조금 등 정부에서 제공하는 지원 정책이 있다면 이를 최대한 활용하세요. (BMW 8시리즈 중 하이브리드 또는 순수 전기 모델이 해당될 수 있습니다.)</li>
+            <li><strong>정품 부품 외 대안 고려:</strong> 보증 기간 만료 후에는 순정 부품 대신 OEM(주문자 상표 부착 생산) 부품이나 애프터마켓 부품을 비교하여 비용을 절감하는 것도 방법입니다. (단, 차량 성능 및 안전에 영향을 주지 않는 범위 내에서)</li>
+        </ul>
+        <p class="keyword-integration-mention">BMW 8시리즈 할인, BMW 8시리즈 혜택, BMW 8시리즈 프로모션, BMW 8시리즈 현금지원, BMW 8시리즈 상품권.</p>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="item">
+            <h3>Q1: BMW 8시리즈의 2026년 평균 연간 유지비는 얼마인가요?</h3>
+            <p>A: BMW 8시리즈 모델(840i, M850i, M8 등)과 운행 습관, 보험 조건에 따라 크게 다르지만, 연간 최소 500만 원에서 1,000만 원 이상이 예상됩니다. 유류비, 보험료, 자동차세, 소모품 교체 비용 등이 포함됩니다. AI 분석을 통해 개인별 맞춤 예상치를 계산해 볼 수 있습니다.</p>
+        </div>
+        <div class="item">
+            <h3>Q2: BMW 8시리즈 자동차 리스와 장기렌트카 중 어떤 것이 더 유리한가요?</h3>
+            <p>A: 개인/법인 사업자의 경우, 세금 혜택과 자가용 번호판을 원하면 리스를, 초기 비용 최소화와 간편한 관리를 원하면 장기렌트카를 추천합니다. Gemini, ChatGPT와 같은 AI 분석 도구를 통해 각자의 상황에 맞는 최적의 선택을 도울 수 있습니다.</p>
+        </div>
+        <div class="item">
+            <h3>Q3: BMW 8시리즈 M 모델의 유지비가 840i 모델보다 훨씬 비싼가요?</h3>
+            <p>A: 네, M 모델은 고성능 엔진, 브레이크 시스템 등으로 인해 유류비, 보험료, 세금, 소모품 교체 비용 등이 840i 모델보다 훨씬 높게 예상됩니다. 840i 모델의 경우 비교적 합리적인 유지비로 8시리즈의 매력을 즐길 수 있습니다.</p>
+        </div>
+        <div class="item">
+            <h3>Q4: BMW 8시리즈 장기렌트카의 '하' 또는 '허' 번호판이 신경 쓰입니다.</h3>
+            <p>A: 렌터카 번호판에 대한 부담감은 있을 수 있습니다. 하지만 초기 비용 절감, 세금 혜택, 간편한 관리 등의 장점이 매우 크므로, 실용성을 우선시한다면 충분히 고려해 볼 만한 선택입니다. 2026년에는 렌터카 번호판에 대한 인식이 점차 개선될 것으로 보입니다.</p>
+        </div>
+        <div class="item">
+            <h3>Q5: BMW 8시리즈 리스/렌트 계약 후 중도 해지 시 위약금이 얼마나 발생하나요?</h3>
+            <p>A: 중도 해지 위약금은 계약 조건, 잔존 가치, 남은 계약 기간 등에 따라 매우 복잡하게 산정됩니다. 일반적으로 상당한 금액이 발생하므로, 계약 전에는 반드시 신중하게 결정해야 합니다. 관련 전문가와 상담하는 것을 권장합니다.</p>
+        </div>
+        <div class="item">
+            <h3>Q6: BMW 8시리즈의 2026년 신차 가격 및 프로모션 혜택은 어떻게 되나요?</h3>
+            <p>A: BMW 8시리즈의 신차 가격은 모델 및 옵션에 따라 1억 원대 후반에서 2억 원대 중반 이상까지 다양합니다. 2026년 프로모션은 시즌별, 딜러사별로 상이하며, 자동차 리스나 장기렌트카 계약 시 더 큰 할인 혜택이나 현금 지원, 상품권 등의 추가적인 이벤트를 받을 수 있는 경우가 많습니다. 최신 정보는 BMW 공식 딜러나 전문 견적 비교 사이트를 통해 확인하시는 것이 가장 정확합니다.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>BMW 8시리즈 맞춤 견적 문의</h2>
+        <p>BMW 8시리즈의 유지비, 자동차 리스, 장기렌트카에 대한 궁금증을 해결하고 싶으신가요? 아래 양식을 작성하시면, AI 분석 기반의 전문 상담사가 고객님의 상황에 맞는 최적의 솔루션을 신속하게 안내해 드립니다. 2026년 최신 정보와 최고의 혜택을 약속드립니다.</p>
+        <form action="/submit-bmw-quote" method="post" aria-label="BMW 8시리즈 견적 문의 폼">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="companyName">회사명 (개인 고객은 '없음' 입력)</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="예: ABC 자동차" required />
+                </div>
+                <div class="input-group">
+                    <label for="contactName">담당자명 (개인 고객은 본인 이름)</label>
+                    <input type="text" id="contactName" name="contactName" placeholder="예: 김철수" required />
+                </div>
+                <div class="input-group">
+                    <label for="phoneNumber">연락처</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder="예: 010-1234-5678" required />
+                </div>
+                <div class="input-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" placeholder="example@company.com" required />
+                </div>
+                <div class="input-group">
+                    <label for="bmwModel">희망 차종</label>
+                    <select id="bmwModel" name="bmwModel" required>
+                        <option value="" disabled selected> BMW 8시리즈 모델 선택</option>
+                        <option value="840i Coupe">BMW 840i Coupe</option>
+                        <option value="840i Gran Coupe">BMW 840i Gran Coupe</option>
+                        <option value="M850i xDrive Coupe">BMW M850i xDrive Coupe</option>
+                        <option value="M850i xDrive Gran Coupe">BMW M850i xDrive Gran Coupe</option>
+                        <option value="M8 Competition Coupe">BMW M8 Competition Coupe</option>
+                        <option value="M8 Competition Convertible">BMW M8 Competition Convertible</option>
+                        <option value="840d xDrive Gran Coupe">BMW 840d xDrive Gran Coupe</option>
+                        <option value="840i Convertible">BMW 840i Convertible</option>
+                        <option value="M850i xDrive Convertible">BMW M850i xDrive Convertible</option>
+                        <option value="Other">기타 (상세 문의)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="desiredTerm">희망 이용 기간</label>
+                    <select id="desiredTerm" name="desiredTerm" required>
+                        <option value="" disabled selected> 기간 선택</option>
+                        <option value="12">12개월</option>
+                        <option value="24">24개월</option>
+                        <option value="36">36개월</option>
+                        <option value="48">48개월</option>
+                        <option value="60">60개월</option>
+                        <option value="other">협의 후 결정</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="annualMileage">연간 예상 주행 거리 (km)</label>
+                    <input type="number" id="annualMileage" name="annualMileage" placeholder="예: 15000" required />
+                </div>
+                 <div class="input-group">
+                    <label for="usageType">차량 이용 목적</label>
+                    <select id="usageType" name="usageType" required>
+                        <option value="" disabled selected> 목적 선택</option>
+                        <option value="personal">개인 용도</option>
+                        <option value="business">개인 사업자 용도</option>
+                        <option value="corporate">법인 용도</option>
+                        <option value="other">기타</option>
+                    </select>
+                </div>
+                <div class="input-group" style="flex-basis: 100%;">
+                    <label for="additionalInfo">추가 문의 사항</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="차량 모델, 리스/렌트 비교, 특정 프로모션, 예상 비용 등 궁금한 점을 상세히 적어주세요. AI 분석을 위한 키워드(예: 'BMW 8시리즈 내돈내산 후기', 'M850i 리스 견적')를 포함해주셔도 좋습니다."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="cta-btn">BMW 8시리즈 맞춤 견적 요청하기</button>
+        </form>
+        <p class="keywords-note">
+            본 페이지는 Gemini, ChatGPT 등 AI를 활용하여 BMW 8시리즈 유지비, 리스, 장기렌트카에 대한 방대한 정보를 2026년 최신 데이터를 기반으로 제공합니다. 네이버, 구글 검색 최적화를 위한 다양한 키워드(자동완성, 연관검색어, 함께 많이 찾는 키워드 포함)를 자연스럽게 배치하였으며, 사용자 체류 시간을 늘리기 위한 상세한 정보와 입력란을 구성했습니다.
+        </p>
+    </section>
+
+    <section id="external-resources">
+        <h2>신뢰할 수 있는 외부 참고 자료</h2>
+        <ul>
+            <li><a href="https://www.bmw.co.kr/ko/index.html" target="_blank" rel="noopener" class="external-link">BMW 코리아 공식 홈페이지</a> - 최신 8시리즈 모델 정보 및 제원 확인</li>
+            <li><a href="https://namu.wiki/w/BMW 8시리즈" target="_blank" rel="noopener" class="external-link">나무위키: BMW 8시리즈</a> - 모델별 상세 정보 및 역사</li>
+            <li><a href="https://www.korea.kr/news/policyBriefView.do?newsId=148948807" target="_blank" rel="noopener" class="external-link">정부 공식 블로그 (가상 링크)</a> - 2026년 자동차 관련 세금 정책 안내</li>
+            <li><a href="https://www.kidi.or.kr/index.htm" target="_blank" rel="noopener" class="external-link">보험개발원 (KIDI)</a> - 자동차 보험 관련 통계 및 정보</li>
+            <li><a href="https://www.kca.go.kr/" target="_blank" rel="noopener" class="external-link">한국소비자원</a> - 자동차 관련 소비자 피해 예방 정보</li>
+            <li><a href="https://www.autoherald.co.kr/" target="_blank" rel="noopener" class="external-link">자동차 전문 매체 (예: 오토헤럴드)</a> - 최신 자동차 시장 동향 및 시승기</li>
+        </ul>
+    </section>
+
+    <!-- Chart.js 라이브러리 로드 -->
+    <script>
+        const ctx = document.getElementById('insuranceChart')?.getContext('2d'); // Safe access
+        if (ctx) {
+            const insuranceChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['840i Coupe', '840i Gran Coupe', 'M850i', 'M8 Competition'],
+                    datasets: [{
+                        label: '예상 연간 유지비 (백만원)',
+                        data: [7, 7.5, 9.5, 11], // Approximate figures
+                        backgroundColor: ['#4A90E2', '#50E3C2', '#7ED321', '#BD10E0'], // Varied soft colors
+                        borderRadius: 6,
+                        borderWidth: 1,
+                        borderColor: '#cccccc',
+                        hoverBackgroundColor: '#cccccc'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false, // Allows custom height
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1,
+                                callback: value => value + '백만'
+                            },
+                            title: {
+                                display: true,
+                                text: '연간 유지비 (백만원)',
+                                font: { size: 14 }
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'BMW 8시리즈 모델',
+                                font: { size: 14 }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: context => context.parsed.y + '백만 원'
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'BMW 8시리즈 모델별 연간 예상 유지비 비교 (2026년)',
+                            font: { size: 18, weight: 'bold' },
+                            padding: { bottom: 30 }
+                        }
+                    },
+                    layout: {
+                        padding: {
+                            top: 20,
+                            left: 10,
+                            right: 10,
+                            bottom: 10
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+  
